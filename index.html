@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link href="./style.css" rel="stylesheet">
+    <title>Cats&Dogs</title>
+  </head>
+  <body>
+
+    <div class="general"><h1> База данных четвероногих клиентов </h1></div>
+
+    <div id="information">
+      
+      <form>
+        <!--отрисуем таблицу и создадим кнопка РЕДАКТИРОВАТЬ и УДАЛИТЬ-->
+       <div class="text_description">
+           <!-- <table>
+               <tr>
+                   <td><div class="text_name strong">Имя</div></td>
+                   <td><div class="cell text_breed strong">Порода вашего питомца</div></td>
+                   <td><div class="cell text_wool strong">Тип шерсти</div></td>
+                   <td><div class="cell text_age strong">Возраст питомца</div></td>
+                   <td><div class="cell text_food strong">Тип питания питомца</div></td>
+                   <td><div class="cell text_detenation strong">Условия содержания питомца</div></td>
+                   <td><div class="cell text_vaccination strong">Вакцинация</div></td>
+               </tr> -->
+          
+          
+          
+          <!-- 
+          <div class="cell text_food strong">Тип питания питомца</div>
+          
+           -->
+        </table>
+        </div>
+     
+
+
+      <!--отрисовка таблицы с данными об объектах через JS. около каждого так же
+      создается кнопка РЕДАКТИРОВАТЬ и УДАЛИТЬ-->
+      </form>
+    </div>
+    <br>
+
+    <div id="all_info" class="all_info">
+      <h2>Подробные данные</h2>
+      <form>
+        <!--<div class="detailInfo">
+          <div class="details">
+            <div class="elem">Имя</div>
+          </div>
+          <div class="details">
+            <div class="elem">12e12e</div>
+            <div class="elem">wefwef</div>
+            <div class="elem">1wefwefwef</div>
+          </div>
+        </div>
+        <input type="button" class="buttons" id="mainMenu2" value="Главное меню">-->
+      </form>
+      <div class="newC"></div>
+    </div>
+    <br>
+
+    <div id="create_person">
+      <div class="newI"><h2>Введите информацию: </h2></div>
+      <form>
+        <div class="radio_btn">
+          <div><input type="radio" id="radio_ext1" name="radioOneExt" value="killer" >Собака</div>
+          <div><input type="radio" id="radio_ext2" name="radioTwoExt" value="sniper">Кот</div>
+        </div>
+        <br>
+        <div class="nik" id="nik">
+        <p><span>Имя вашего питомца: </span><input type="text" id="textFirstName" value="Nik your pet" required></p><br>
+        </div><br>
+      <div class="name_pet">
+        <p>Порода вашего питомца:
+        <input type="text" class="input_text" id="textBreed" value="" required ></p><br>
+      </div>
+      
+      <div class="type_wool">
+        <p>Тип шерсти: 
+        <select id="selectWool" class="selectWool">
+          <option name="option_wool" value="wool1">Длинношерстный</option>
+          <option name="option_wool" value="wool2">Короткошерстный</option>
+        </select></p><br>
+      </div>
+      <div class="age">
+        <p>Возраст питомца: 
+        <select id="selectAge" class="selectAge">
+          <option value="age3">до 1 года</option>
+          <option value="age1">от 1 до 3</option>
+          <option value="age2">от 3 до 5</option>
+          <option value="age4">от 5 до 8</option>
+          <option value="age5">от 8 до 10</option>
+          <option value="age6">больше 10</option>
+        </select></p><br>
+      </div>
+      <div class="typeFood">
+        <p>Тип питания питомца: 
+        <select id="selectFood" class="selectFood">
+          <option value="food1">Сухой корм</option>
+          <option value="food2">Адаптивное домашнее меню</option>
+          <option value="food3">Смешанное</option>
+        </select></p><br>
+      </div>
+      <div class="typeDetention">
+        <p>Условия содержания питомца:
+        <select id="selectDetension" class="selectDetension">
+          <option value="detention1">Домашнее содержание и регулярный выгул</option>
+          <option value="detention2">Исключительно домашнее содержание</option>
+          <option value="detention3">На частном дворе</option>
+        </select></p><br>
+      </div>
+      <div class="vaccination">
+        <p>Вакцинация: 
+        <select id="selectVaccination" class="selectVaccination">
+          <option value="vaccination1">Есть</option>
+          <option value="vaccination2">Нет</option>
+          <option value="vaccination3">В прцессе вакцинации</option>
+        </select></p><br>
+      </div> <br>
+      <input type="button" id="createPerson" class="buttons" value="Добавить в базу">
+      <input type="button" id="mainMenu" class="buttons" value="Главная страница">
+    </div>
+    <div id="block2" class="block2">
+     
+    </div>
+  </div>
+  
+</form>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+
+    
+   
+  </body>
+</html>

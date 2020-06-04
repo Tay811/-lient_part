@@ -1,0 +1,126 @@
+body{
+    
+    background-image: url("./img/03.jpg");
+    width: 100%;
+    margin: 0;
+    height: 100vh;
+    background-size: cover;  
+    
+}
+
+h1{
+    text-align: center;
+    width: 100%;
+    /* margin-left: 400px; */
+    font-family: 'Comfortaa', cursive;
+    margin-top: 20px;
+
+}
+
+#information{
+    margin-left: 220px;
+    background-color: rgba(196, 196, 196, 0.219);
+    font-family: 'Comfortaa', cursive;
+    height: 300px;
+    width: 1100px;
+    border-radius: 10px;
+}
+
+.text_description{
+    display: flex;
+    position: relative;
+    margin-left: 20px;
+    margin-top: 15px;
+    
+}
+
+.newC{
+    margin-left: 360px;
+}
+
+#newBanditButton{
+    height: 50px;
+    width: 330px; 
+    padding: 8px;
+    cursor: pointer;
+    border: solid 1px #f2f2f2;
+    background-color: rgba(96, 97, 97, 0.541);
+    border-radius: 10px;
+    font-size: 16px;
+    flex-direction: row;
+    font-family: 'Comfortaa', cursive;
+    color: white;
+}
+
+.newI{
+    width: 400px;
+    height: 50px;
+    margin-left: 50px;
+}
+
+
+#create_person{
+    margin-left: 150px;
+    background-color: rgba(196, 196, 196, 0.479);
+    font-family: 'Comfortaa', cursive;
+    height: 600px;
+    width: 1200px;
+    border-radius: 10px;
+    
+}
+
+.type_wool, .age, .typeFood, .typeDetention, .vaccination{
+    height: 25px;
+}
+
+#textFirstName, #textBreed, #nik{
+    height: 25px;
+}
+
+.radio_btn{
+    margin-top: 20px;
+}
+
+#createPerson, #mainMenu{
+    margin-top: 70px;
+    height: 40px;
+    width: 200px; 
+    padding: 8px;
+    cursor: pointer;
+    border: solid 1px #f2f2f2;
+    background-color: rgba(59, 59, 59, 0.801);
+    border-radius: 10px;
+    font-size: 16px;
+    flex-direction: row;
+    font-family: 'Comfortaa', cursive;
+    color: white;
+
+}
+
+
+.input_text, #textFirstName, #textBreed, #selectWool, #selectAge, #selectFood, #selectVaccination {
+    height: 32px;
+    width: 200px; 
+    padding: 8px;
+    cursor: pointer;
+    border: solid 1px #f2f2f2;
+    background-color: rgba(96, 97, 97, 0.541);
+    border-radius: 10px;
+    font-size: 14px;
+    font-family: 'Comfortaa', cursive;
+    color: white;   
+}
+
+#selectDetension{
+    height: 32px;
+    width: 380px; 
+    padding: 8px;
+    cursor: pointer;
+    border: solid 1px #f2f2f2;
+    background-color: rgba(96, 97, 97, 0.541);
+    border-radius: 10px;
+    font-size: 14px;
+    font-family: 'Comfortaa', cursive;
+    color: white;  
+
+}
