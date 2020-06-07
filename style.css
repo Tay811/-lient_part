@@ -18,7 +18,7 @@ h1{
 }
 
 #information{
-    margin-left: 220px;
+    margin-left: 450px;
     background-color: rgba(196, 196, 196, 0.219);
     font-family: 'Comfortaa', cursive;
     height: 300px;
@@ -60,7 +60,7 @@ h1{
 
 
 #create_person{
-    margin-left: 150px;
+    margin-left: 450px;
     background-color: rgba(196, 196, 196, 0.479);
     font-family: 'Comfortaa', cursive;
     height: 600px;

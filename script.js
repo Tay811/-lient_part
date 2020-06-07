@@ -169,6 +169,9 @@ class BaseClass{
     // this.vaccination = vaccination;
   }
 
+
+  // breed, wool, age, food, detenition, vaccination
+
   get firstName(){
     return this._firstName;
   }
@@ -299,11 +302,11 @@ let arrBandits = []; // массив из персон
 
 
 //статичные 
-let bandit1 = new OneExtendsClass("Боб", 12, 15);
+let bandit1 = new OneExtendsClass("Боб", "нет", 15);
 arrBandits.push(bandit1); 
-let bandit2 = new OneExtendsClass("Черныш", 37, 23);
+let bandit2 = new OneExtendsClass("Черныш", "нет", 23);
 arrBandits.push(bandit2); 
-let bandit3 = new OneExtendsClass("Лео", 24, 12);
+let bandit3 = new OneExtendsClass("Лео", "нет", 12);
 arrBandits.push(bandit3); 
 display("information");
 printInfo(arrBandits);
@@ -322,24 +325,29 @@ document.getElementById("createPerson").addEventListener("click", function() {
   document.getElementById("mainMenu").style.display="";
 
 
-
   let firstName = document.getElementById("textFirstName").value;
+  let typeBreed = document.getElementById("textBreed").value;
+  let typeWool = document.getElementById("selectWool").value;
+  let typeAge = document.getElementById("selectAge").value;
+  let typeFood = document.getElementById("selectFood").value;
+  let typeDetenition = document.getElementById("selectDetension").value;
+  let typeVaccination = document.getElementById("selectVaccination").value;
   let type = checkRadio();
    switch (type) {
     case "killer":
-      arrBandits[arrBandits.length] = new OneExtendsClass(firstName, type1, type2);
+      arrBandits[arrBandits.length] = new OneExtendsClass(firstName, typeBreed, typeWool, typeAge, typeFood, typeDetenition, typeVaccination);
       printInfo(arrBandits);
       display("information");
       alert("Добавил нового");
     break;
     case "sniper":
-      arrBandits[arrBandits.length] = new TwoExtendsClass(firstName, type3);
+      arrBandits[arrBandits.length] = new TwoExtendsClass(firstName, typeBreed, typeWool, typeAge, typeFood, typeDetenition, typeVaccination);
       printInfo(arrBandits);
       display("information");
       alert("Добавил нового");
       break;
     default :
-      arrBandits[arrBandits.length] = new  OneExtendsClass(firstName, type1, type2);
+      arrBandits[arrBandits.length] = new  OneExtendsClass(firstName, typeBreed, typeWool, typeAge, typeFood, typeDetenition, typeVaccination);
       printInfo(arrBandits);
       display("information");
       alert("Добавил нового");
@@ -350,3 +358,16 @@ document.getElementById("createPerson").addEventListener("click", function() {
 document.getElementById("mainMenu").addEventListener("click",function() {
   display("information");
 });
+
+// document.getElementById("selectPet").addEventListener("change", function () {
+//   document.getElementById("general").style.display = "";
+//   let type = checkRadio();
+//   switch (type) {
+//       case "killer":
+//           displaySelect("killer");
+//           break;
+//       case "sniper":
+//           displaySelect("sniper");
+//           break;
+//   }
+// });
